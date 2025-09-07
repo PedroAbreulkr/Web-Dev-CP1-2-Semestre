@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Futebol Feminino</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+  <header class="top">
+    <h1>Futebol Feminino Cards</h1>
+  </header>
+
+  <main class="wrap">
+    <section class="ctrl">
+      <div class="ctrl-l">
+        <input id="s" type="search" placeholder="Buscar por nome ou posição..." aria-label="Buscar">
+        <select id="club" aria-label="Filtrar por clube">
+          <option value="">Todos os clubes</option>
+        </select>
+        <div class="sort">
+          <button id="sort-n" class="btn" title="Ordenar por nome">Nome</button>
+          <button id="sort-p" class="btn" title="Ordenar por posição">Posição</button>
+        </div>
+      </div>
+      <div class="ctrl-r">
+        <button id="add" class="btn main">Adicionar Jogadora</button>
+      </div>
+    </section>
+
+    <section id="form" class="form hide" aria-live="polite">
+      <h2 id="form-t">Adicionar Jogadora</h2>
+      <form id="f" novalidate>
+        <input type="hidden" id="idx" value="-1">
+        <div class="row">
+          <label for="nome">Nome</label>
+          <input id="nome" type="text" required>
+        </div>
+        <div class="row">
+          <label for="pos">Posição</label>
+          <input id="pos" type="text" required>
+        </div>
+        <div class="row">
+          <label for="clu">Clube</label>
+          <input id="clu" type="text" required>
+        </div>
+        <div class="row">
+          <label for="foto">Foto (URL)</label>
+          <input id="foto" type="url" required>
+        </div>
+        <div class="row stats">
+          <div>
+            <label for="gol">Gols</label>
+            <input id="gol" type="number" min="0" required>
+          </div>
+          <div>
+            <label for="ast">Assistências</label>
+            <input id="ast" type="number" min="0" required>
+          </div>
+          <div>
+            <label for="jog">Jogos</label>
+            <input id="jog" type="number" min="0" required>
+          </div>
+        </div>
+        <div class="acts">
+          <button type="submit" class="btn main">Salvar</button>
+          <button type="button" id="cancel" class="btn">Cancelar</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="cards" class="grid" aria-live="polite"></section>
+  </main>
+
+  <footer class="foot">
+    <div class="foot-box">
+      <div>
+        <h5>Futebol Feminino Cards</h5>
+        <p class="muted">Futebol Feminino</p>
+      </div>
+      <div>
+        <h6>Siga-nos</h6>
+        <div class="links">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <small>© 2025 Futebol Feminino Cards - Todos os direitos reservados</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
