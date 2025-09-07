@@ -3,7 +3,7 @@
 # Futebol Feminino Cards — Portal de Gerenciamento de Jogadoras  
 
 **Link do site**  
-[https://pedroabreulkr.github.io/futebol-feminino-cards/](https://pedroabreulkr.github.io/futebol-feminino-cards/)  
+https://pedroabreulkr.github.io/Web-Dev-CP1-2-Semestre/
 
 ---
 
